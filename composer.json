@@ -1,5 +1,5 @@
 {
     "require": {
-        "phpunit/phpunit": "8.1.6"
+        "phpunit/phpunit": "7.2.*"
     }
 }
