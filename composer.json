@@ -19,6 +19,9 @@
             "dev-main": "0.14-dev"
         }
     },
+     "require": {
+        "phpunit/phpunit": "7.2.*.*"
+    },
     "conflict": {
         "rector/rector-phpunit": "*",
         "rector/rector-symfony": "*",
