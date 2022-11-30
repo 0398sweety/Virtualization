@@ -6,7 +6,7 @@
         "bin/rector"
     ],
     "require": {
-        "php": "7.2.0",
+        "php": "8.1.6",
         "phpstan/phpstan": "^1.9.2"
     },
     "autoload": {
@@ -20,7 +20,7 @@
         }
     },
      "require": {
-        "phpunit/phpunit": "7.2.0"
+        "phpunit/phpunit": "8.1.6"
     },
     "conflict": {
         "rector/rector-phpunit": "*",
