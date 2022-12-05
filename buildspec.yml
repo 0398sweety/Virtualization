@@ -15,15 +15,6 @@ phases:
       - echo Building the Docker image...
       - docker build -t resumeappecr .
       - docker tag resumeappecr:latest 117022657282.dkr.ecr.us-east-1.amazonaws.com/resumeappecr:latest
-  post_build:
-    commands:
-      - echo Build completed on `date`
-      - echo Pushing the Docker images...
-      - docker push 117022657282.dkr.ecr.us-east-1.amazonaws.com/resumeappecr:latest
-      - echo Writing image definitions file...
-      - printf '[{"name":"resumeappecr","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
-      - cat imagedefinitions.json
-      - echo Deploying the app
 
 artifacts:
     files: imagedefinitions.json
